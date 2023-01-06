@@ -50,8 +50,23 @@ Results are evaluated using accuracy metrics
 2. Accuracy is evaluated seperately for image prediction and sum prediction  
 
 ### Results
+
 Following outcomes are achieved post training for 10 epochs with learning rate of 0.01 at momentum of 0.9  on the test data
+
 1. Image prediction loss 0.00182  
 2. Image prediction accuracy 99%  
 3. Sum prediction loss 0.7002  
 4. Sum prediction accuracy 96%
+
+loss1=0.48954692482948303 loss2=2.3146541118621826 batch_id=468: 100%|██████████| 469/469 [00:47<00:00,  9.93it/s]
+loss1=0.34926480054855347 loss2=1.7767062187194824 batch_id=468: 100%|██████████| 469/469 [00:39<00:00, 11.75it/s]
+loss1=0.19229070842266083 loss2=1.4687395095825195 batch_id=468: 100%|██████████| 469/469 [00:41<00:00, 11.26it/s]
+loss1=0.35430416464805603 loss2=1.4083644151687622 batch_id=468: 100%|██████████| 469/469 [00:41<00:00, 11.38it/s]
+loss1=0.4229431748390198 loss2=1.3557225465774536 batch_id=468: 100%|██████████| 469/469 [00:40<00:00, 11.56it/s]
+loss1=0.39826178550720215 loss2=1.2056559324264526 batch_id=468: 100%|██████████| 469/469 [00:40<00:00, 11.53it/s]
+loss1=0.004003277979791164 loss2=0.9220921993255615 batch_id=468: 100%|██████████| 469/469 [00:40<00:00, 11.60it/s]
+loss1=0.008025651797652245 loss2=0.8497279286384583 batch_id=468: 100%|██████████| 469/469 [00:40<00:00, 11.67it/s]
+loss1=0.001826586201786995 loss2=0.7002215385437012 batch_id=468: 100%|██████████| 469/469 [00:40<00:00, 11.61it/s]
+
+Test set: Average loss: 66.9433, Accuracy: 9896/10000 (99%)
+Test set: Average loss: 66.9433, Accuracy: 9551/10000 (96%)
