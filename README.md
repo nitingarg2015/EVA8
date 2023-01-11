@@ -29,7 +29,7 @@ Backpropagation to evaluate the sensitity of the output with respect to weight 5
 
 Equation of backpropagating error w.r.t w5 is as below:  
 
-![image](https://user-images.githubusercontent.com/13360207/211784332-d52e2331-d48f-4ca9-ba22-7b1bfdaaeeed.png)   
+![image](https://user-images.githubusercontent.com/13360207/211789204-b74a3147-9e72-48be-bce6-928c7f4820a3.png)  
 
 *This process is followed for all the weights from w1 to w8 and equations for each of these are provided in the excel sheet*  
 
