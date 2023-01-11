@@ -43,7 +43,16 @@ Manual Simulation of outcomes is provided in the sheet **Simulation**
 4. For the second pass weight w(x) for i'th iteration is updated using the equation: ![image](https://user-images.githubusercontent.com/13360207/211787675-2abd49cb-bb92-4a00-997c-4ce6b4b4542c.png)
 5. Iteratively sensitivity along with total error is calculated over multiple iterations  
 
-  
+ ## Outcomes  
+ 
+ 1. Simulation was done for 6 learing rates: 0.1, 0.2, 0.5, 0.8, 1, 2  
+ 2. Learning graph is as per the below figure
+ 3. Linera learning rate is observed at learning rate = 0.1
+ 4. It is observed that as the learning rate is increased from 0.1 to 2, rate of learning also increases
+ 
+ ![image](https://user-images.githubusercontent.com/13360207/211788594-89de337b-b04d-4731-9b8a-b15e150fc1e6.png)
+
+ 
 
 
 
