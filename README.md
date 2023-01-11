@@ -29,8 +29,21 @@ Backpropagation to evaluate the sensitity of the output with respect to weight 5
 
 Equation of backpropagating error w.r.t w5 is as below:  
 
-![image](https://user-images.githubusercontent.com/13360207/211784332-d52e2331-d48f-4ca9-ba22-7b1bfdaaeeed.png)
+![image](https://user-images.githubusercontent.com/13360207/211784332-d52e2331-d48f-4ca9-ba22-7b1bfdaaeeed.png)   
 
 *This process is followed for all the weights from w1 to w8 and equations for each of these are provided in the excel sheet*  
+
+## Simulation of outcomes
+
+Manual Simulation of outcomes is provided in the sheet **Simulation**  
+
+1. Input, Output and weights are initialized as per the values provided in the assignment 
+2. Forward propagation and backward propagation values are calculated as per the equations provided in the "Parameter Calcs" worksheet
+3. Learning rate is set at initial value of 0.1
+4. For the second pass weight w(x) for i'th iteration is updated using the equation: ![image](https://user-images.githubusercontent.com/13360207/211787675-2abd49cb-bb92-4a00-997c-4ce6b4b4542c.png)
+5. Iteratively sensitivity along with total error is calculated over multiple iterations  
+
+  
+
 
 
