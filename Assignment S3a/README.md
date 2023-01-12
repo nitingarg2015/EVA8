@@ -27,11 +27,28 @@ Backpropagation to evaluate the sensitity of the output with respect to weight 5
 
 ![image](https://user-images.githubusercontent.com/13360207/211784133-83f24a49-4840-4a14-9da4-677071eba076.png)
 
-Equation of backpropagating error w.r.t w5 is as below:  
+Equation of backpropagating error w.r.t w5 is as calculated by following the below steps:  
 
-![image](https://user-images.githubusercontent.com/13360207/211789204-b74a3147-9e72-48be-bce6-928c7f4820a3.png)  
+![image](https://user-images.githubusercontent.com/13360207/212109691-64f3c1f9-ce7f-4ade-80fe-7f5c6045b76c.png)
+![image](https://user-images.githubusercontent.com/13360207/212109795-f37f1cf7-6bfa-48a0-b6f0-fc69fe11c13b.png)
+![image](https://user-images.githubusercontent.com/13360207/212109825-0057ad06-3912-45a4-a867-c68a1d34ef18.png)
+![image](https://user-images.githubusercontent.com/13360207/212109906-55a022a8-e4c5-4eed-8fc1-b88571484a5e.png)
+![image](https://user-images.githubusercontent.com/13360207/212109938-3b985502-293d-47a3-89e0-750012e089ba.png)
 
-*This process is followed for all the weights from w1 to w8 and equations for each of these are provided in the excel sheet*  
+*This process is followed for all the weights from w5 to w8 and equations for each of these are provided in the excel sheet*  
+
+### Calculation of gradients for weights from w1 to w4
+
+Equation of backpropagating error w.r.t w5 is as calculated by following the below steps:
+![image](https://user-images.githubusercontent.com/13360207/212110254-afb7adf2-210d-46c8-95e7-83494c614254.png)
+
+In the above equation, partial differentiation of second term will be zero for the given architecture
+Expansion of these equations as per chain rule are provided in the excel
+
+Gradient for w1 is as below:
+![image](https://user-images.githubusercontent.com/13360207/212110820-a89beef7-d0e8-4770-b9bc-b3df646f2687.png)
+
+*This process is followed for all the weights from w2 to w4 and equations for each of these are provided in the excel sheet* 
 
 ## Simulation of outcomes
 
