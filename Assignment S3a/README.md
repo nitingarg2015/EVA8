@@ -48,10 +48,9 @@ Equation of backpropagating error w.r.t w5 is as calculated by following the bel
 ![image](https://user-images.githubusercontent.com/13360207/212110254-afb7adf2-210d-46c8-95e7-83494c614254.png)
 
 In the above equation, partial differentiation of second term will be zero for the given architecture
-Expansion of these equations as per chain rule are provided in the excel
 
-Gradient for w1 is as below:
-![image](https://user-images.githubusercontent.com/13360207/212110820-a89beef7-d0e8-4770-b9bc-b3df646f2687.png)
+![image](https://user-images.githubusercontent.com/13360207/212118880-384bdc82-9040-4e84-b39c-4cadc46c1b1c.png)
+
 
 *This process is followed for all the weights from w2 to w4 and equations for each of these are provided in the excel sheet* 
 
