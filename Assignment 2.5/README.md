@@ -31,8 +31,9 @@ Neural Network is then built using convolutional and linear neural networks as f
 3. Above output (**batch_size*10**) is transformed using softmax function and is **concatenated** with **one hot vector random number input (batch_size*10)** to form a tensor of size **batch_size*20**
 4. This tensor is then passed through two linear neural network layers to generate an output on 19 neurons (representing sum from 0 to 18)
 5. Relu activation function is used for each of the convolutional
-6. No activation functio is used linear layers for summation as the transformation is linear represting sum of two numbers
-7. Feed forward network returns two arrays post log_softmax transformation, one each for output for image prediction and sum prediction
+6. No activation function used for FCC layer to predict numbers
+7. No activation function is used linear layers for summation as the transformation is linear represting sum of two numbers
+8. Feed forward network returns two arrays post log_softmax transformation, one each for output for image prediction and sum prediction
 
 ### Training the network
 Stochastic gradient descent with learning rate of 0.01 and momentum of 0.9 is used to train the network. Network is trained for 10 epochs. Training is conducted on GPU
