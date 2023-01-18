@@ -123,7 +123,47 @@ StepLR with step size = 4 and gamma = 0.4, with RandomRotation((-5,5)) transform
 ### Analysis:
 1.	Reached test accuracy of 99.38% in the 9th epoch
 2.	**Achieved accuracy > 99.4 in last 2 epochs, and accuracy > 99.33 in last 5 epochs**
-
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1            [-1, 8, 28, 28]              80
+       BatchNorm2d-2            [-1, 8, 28, 28]              16
+           Dropout-3            [-1, 8, 28, 28]               0
+            Conv2d-4           [-1, 16, 28, 28]           1,168
+       BatchNorm2d-5           [-1, 16, 28, 28]              32
+           Dropout-6           [-1, 16, 28, 28]               0
+            Conv2d-7           [-1, 20, 28, 28]           2,900
+       BatchNorm2d-8           [-1, 20, 28, 28]              40
+           Dropout-9           [-1, 20, 28, 28]               0
+           Conv2d-10            [-1, 8, 28, 28]             168
+        MaxPool2d-11            [-1, 8, 14, 14]               0
+          Dropout-12            [-1, 8, 14, 14]               0
+           Conv2d-13            [-1, 8, 14, 14]             584
+      BatchNorm2d-14            [-1, 8, 14, 14]              16
+          Dropout-15            [-1, 8, 14, 14]               0
+           Conv2d-16           [-1, 16, 14, 14]           1,168
+      BatchNorm2d-17           [-1, 16, 14, 14]              32
+          Dropout-18           [-1, 16, 14, 14]               0
+           Conv2d-19            [-1, 8, 14, 14]             136
+        MaxPool2d-20              [-1, 8, 7, 7]               0
+           Conv2d-21              [-1, 8, 7, 7]             584
+      BatchNorm2d-22              [-1, 8, 7, 7]              16
+          Dropout-23              [-1, 8, 7, 7]               0
+           Conv2d-24             [-1, 16, 7, 7]           1,168
+      BatchNorm2d-25             [-1, 16, 7, 7]              32
+          Dropout-26             [-1, 16, 7, 7]               0
+        AvgPool2d-27             [-1, 16, 3, 3]               0
+           Conv2d-28             [-1, 10, 1, 1]           1,450
+================================================================
+Total params: 9,590
+Trainable params: 9,590
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.00
+Forward/backward pass size (MB): 1.01
+Params size (MB): 0.04
+Estimated Total Size (MB): 1.05
+----------------------------------------------------------------
 
 ### Training Logs
 
