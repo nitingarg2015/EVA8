@@ -1,9 +1,9 @@
 # Assignment 4:
-1.	New target is:
-2.  99.4% (this must be consistently shown in your last few epochs, and not a one-time achievement)
-3.	Less than or equal to 15 Epochs
-4.	Less than 10000 Parameters (additional points for doing this in less than 8000 pts)
-5.	Do this in at least 3 steps
+## New target is:
+1.  99.4% (this must be consistently shown in your last few epochs, and not a one-time achievement)
+2.	Less than or equal to 15 Epochs
+3.	Less than 10000 Parameters (additional points for doing this in less than 8000 pts)
+4.	Do this in at least 3 steps
 
 ## Initial Iteration - Assignment 4_init:
 This is the base version we arrived at as part of assignment 3
