@@ -126,9 +126,7 @@ StepLR with step size = 4 and gamma = 0.4, with RandomRotation((-5,5)) transform
 
 ## Model Parameters  
 
-----------------------------------------------------------------
         Layer (type)               Output Shape         Param #
-================================================================
             Conv2d-1            [-1, 8, 28, 28]              80
        BatchNorm2d-2            [-1, 8, 28, 28]              16
            Dropout-3            [-1, 8, 28, 28]               0
@@ -156,12 +154,11 @@ StepLR with step size = 4 and gamma = 0.4, with RandomRotation((-5,5)) transform
       BatchNorm2d-25             [-1, 16, 7, 7]              32
           Dropout-26             [-1, 16, 7, 7]               0
         AvgPool2d-27             [-1, 16, 3, 3]               0
-           Conv2d-28             [-1, 10, 1, 1]           1,450
-================================================================
+           Conv2d-28             [-1, 10, 1, 1]           1,450  
+	   
 Total params: 9,590
 Trainable params: 9,590
-Non-trainable params: 0
-----------------------------------------------------------------
+
 ### Training Logs
 
 EPOCH: 1 Learning Rate:  0.1
