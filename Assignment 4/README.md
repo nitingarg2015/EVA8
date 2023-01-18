@@ -125,7 +125,7 @@ StepLR with step size = 4 and gamma = 0.4, with RandomRotation((-5,5)) transform
 2.	**Achieved accuracy > 99.4 in last 2 epochs, and accuracy > 99.33 in last 5 epochs**
 
 ### Model Parameters  
-
+Reached test accuracy of 99.38% in the 9th epoch  
 ----------------------------------------------------------------
         Layer (type)               Output Shape         Param #
 ================================================================
