@@ -120,12 +120,12 @@ StepLR with step size = 4 and gamma = 0.4, with RandomRotation((-5,5)) transform
  
 2. **Best Training Accuracy: 99.11%, Best Test Accuracy: 99.43%** 
 
-## Model Parameters  
-sdfsdf
-
 ### Analysis:
 1.	Reached test accuracy of 99.38% in the 9th epoch
 2.	**Achieved accuracy > 99.4 in last 2 epochs, and accuracy > 99.33 in last 5 epochs**
+
+## Model Parameters  
+
 ----------------------------------------------------------------
         Layer (type)               Output Shape         Param #
 ================================================================
@@ -162,12 +162,6 @@ Total params: 9,590
 Trainable params: 9,590
 Non-trainable params: 0
 ----------------------------------------------------------------
-Input size (MB): 0.00
-Forward/backward pass size (MB): 1.01
-Params size (MB): 0.04
-Estimated Total Size (MB): 1.05
-----------------------------------------------------------------
-
 ### Training Logs
 
 EPOCH: 1 Learning Rate:  0.1
