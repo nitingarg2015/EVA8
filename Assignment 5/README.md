@@ -60,4 +60,28 @@ Mispredictions for model with Group Normalization
 2. Fluctuation is observed in the rate of decrease in loss/ rate of increase of accuracy for batch normalization
 3. Test loss reduces more consistenlty for Layer and Group normalization
 4. Outcomes: Batch Normalizaiton: Test Accuracy - 99.27%, Layer Normalization - 99.02%, Group Normalization - 99.25%
-5. Layer Normalization - Number of trainable parameters increased from 9590 to 90,158
+5. Layer Normalization - Number of trainable parameters increased from 9590 to 90,158  
+
+### Method to perform three Normalization Techniques  
+Consider data set with batch size = 3, Number of Layers = 2, Channels per layer = 4, and input image size = 2x2. Sample data for this data set is as below. Refer Excel file "Regularization demonstration" in this assignment  
+
+<img width="689" alt="image" src="https://user-images.githubusercontent.com/13360207/215062029-8ecb5f40-50b3-447b-8be2-645fd0a54df6.png">
+
+#### Batch Normalization  
+In Batch Normalization, mean and standard deviation is calculated for each channel, with sample size = batch size. For the above example, 4 mean and 4 variances will be calcuated for each layer
+Number of calculations for Mean and Std Deviation = 16. Calculations for sample data as below  
+
+<img width="597" alt="image" src="https://user-images.githubusercontent.com/13360207/215062111-e45fb295-15d9-46b6-84e3-d5789a1d61cd.png">
+
+### Layer Normalization  
+In Layer Normalization, mean and standard deviation is calculated for item in the batch with sample size = number of channels. For the above example, 3 mean and 3 variances will be calcuated for each layer
+Number of calculations for Mean and Std Deviation = 8. Calculations for sample data as below  
+
+<img width="674" alt="image" src="https://user-images.githubusercontent.com/13360207/215062169-e3f6d498-ac8e-4062-a2c3-f558ce7945cc.png">
+
+### Group Normalization  
+In Group Normalization, each layer is divided into n groups. Mean and standard deviation is then calculated for each item of the batch for defined group size. This helps to work with small batch sizes and higher number of channels per layer. Calculations for sample data as below 
+
+<img width="676" alt="image" src="https://user-images.githubusercontent.com/13360207/215062212-2e706630-8043-4bc6-ad59-a3ae7606547f.png">
+
+
