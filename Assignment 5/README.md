@@ -55,3 +55,9 @@ Mispredictions for model with Group Normalization
 
 <img width="393" alt="image" src="https://user-images.githubusercontent.com/13360207/215048865-2c324d4b-fb92-4a1b-8e57-86b41d9f9991.png">
 
+### Findings from Normalization Techniques  
+1. Batch normalization provides least test loss and highest test accuracy. This may be because the base model for fine tuned earlier for batch normalization
+2. Fluctuation is observed in the rate of decrease in loss/ rate of increase of accuracy for batch normalization
+3. Test loss reduces more consistenlty for Layer and Group normalization
+4. Outcomes: Batch Normalizaiton: Test Accuracy - 99.27%, Layer Normalization - 99.02%, Group Normalization - 99.25%
+5. Layer Normalization - Number of trainable parameters increased from 9590 to 90,158
