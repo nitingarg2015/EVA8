@@ -36,7 +36,7 @@ Model.py file has been created that does the following
 	b. Generated output: 1. model - for generating test outputs, 2. train_losses, train_acc_all, test_losses, test_acc_all - For further analysis and generating plots
 5. Train three models using **train_model_function** for 20 epochs  
 6. Plot graphs for test loss and test accuracy
-
+<img width="507" alt="image" src="https://user-images.githubusercontent.com/13360207/215048718-b284c36c-a854-434e-9cbc-af3d03452c8b.png">
 
 7. Define function **ntest** that return data points for incorrect predictions
 	a. It accepts trained model, device and test_loader as inputs
@@ -44,10 +44,11 @@ Model.py file has been created that does the following
 8. Define function **plot_misclassified** to plot misclassfied images  
 
 Mispredictions for model with Batch Normalization & L1 Regularization
-
+<img width="395" alt="image" src="https://user-images.githubusercontent.com/13360207/215048794-e149a7bb-f281-4bfd-97ec-b78ffda44356.png">
 
 Mispredictions for model with Layer Normalization
-
+<img width="394" alt="image" src="https://user-images.githubusercontent.com/13360207/215048838-0564a770-ada8-4438-b86a-87786d138fd0.png">
 
 Mispredictions for model with Group Normalization
+<img width="393" alt="image" src="https://user-images.githubusercontent.com/13360207/215048865-2c324d4b-fb92-4a1b-8e57-86b41d9f9991.png">
 
