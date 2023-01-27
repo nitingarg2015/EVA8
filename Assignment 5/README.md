@@ -43,12 +43,15 @@ Model.py file has been created that does the following
 	b. Outputs provided for all incorrect predictions, where length of each list = number of batches, and each tensor within the list contains data_images, pred_labels,  and target_labels for the given batch  
 8. Define function **plot_misclassified** to plot misclassfied images  
 
-Mispredictions for model with Batch Normalization & L1 Regularization
+Mispredictions for model with Batch Normalization & L1 Regularization  
+
 <img width="395" alt="image" src="https://user-images.githubusercontent.com/13360207/215048794-e149a7bb-f281-4bfd-97ec-b78ffda44356.png">
 
-Mispredictions for model with Layer Normalization
+Mispredictions for model with Layer Normalization  
+
 <img width="394" alt="image" src="https://user-images.githubusercontent.com/13360207/215048838-0564a770-ada8-4438-b86a-87786d138fd0.png">
 
-Mispredictions for model with Group Normalization
+Mispredictions for model with Group Normalization  
+
 <img width="393" alt="image" src="https://user-images.githubusercontent.com/13360207/215048865-2c324d4b-fb92-4a1b-8e57-86b41d9f9991.png">
 
