@@ -24,6 +24,9 @@ Model.py file has been created that does the following
 ### Assignment_5_v1.ipynb - Notebook runs remaining parts of the assignment  
 
 1. Load **model.py** and import **Net class**, generaty summary using torchsummary - summary is generated for all three normalizations
+![Training Parameters](https://user-images.githubusercontent.com/13360207/215048506-53ae5476-31ae-482f-8d32-374438150bfe.jpg)
+
+
 2. Use dataloader to create training and test datasets, define batch size. batch size = 128 is used  
 3. Define functions for training the model for a given epoch and generating test outputs
 	a. **train** function taken inputs as pre defined model, device, train_loader (dataloader), pre defined optimizer, and optional lambda_l1 for L1 regularization. It returns the following: training loss, training accuracy for that epoch
