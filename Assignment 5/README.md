@@ -42,7 +42,7 @@ Batch Normalization: 9590 parameters, Layer Normalization: 9406 Parameters, Grou
 Test Accuracy
 Batch Normalization with L1 Regularization: 99.35%  
 Layer Normalization: 99.23%  
-Group Normalization: 99.10%
+Group Normalization: 99.10%  
 
 7. Plot graphs for train loss and train accuracy:  
 
