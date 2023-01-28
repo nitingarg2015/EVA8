@@ -24,7 +24,8 @@ Model.py file has been created that does the following
 ### Assignment_5_v1.ipynb - Notebook runs remaining parts of the assignment  
 
 1. Load **model.py** and import **Net class**, generaty summary using torchsummary - summary is generated for all three normalizations
-Batch Normalization: 9590 parameters, Layer Normalization: 9406 Parameters, Group Normalization: 9590 parameters
+Batch Normalization: 9590 parameters, Layer Normalization: 9406 Parameters, Group Normalization: 9590 parameters  
+
 <img width="906" alt="image" src="https://user-images.githubusercontent.com/13360207/215255351-2d5f6087-0f5f-47c8-abcc-113796b6ad24.png">
 
 
