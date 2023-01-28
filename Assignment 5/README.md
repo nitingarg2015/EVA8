@@ -38,7 +38,8 @@ Batch Normalization: 9590 parameters, Layer Normalization: 9406 Parameters, Grou
 	b. Generated output: 1. model - for generating test outputs, 2. train_losses, train_acc_all, test_losses, test_acc_all - For further analysis and generating plots
 5. Train three models using **train_model_function** for 20 epochs  
 6. Plot graphs for test loss and test accuracy:  
-<img width="507" alt="image" src="https://user-images.githubusercontent.com/13360207/215048718-b284c36c-a854-434e-9cbc-af3d03452c8b.png">
+<img width="518" alt="image" src="https://user-images.githubusercontent.com/13360207/215257588-a5d9fb43-1fe1-4515-a14c-ee6754413734.png">
+
 Test Accuracy
 Batch Normalization with L1 Regularization: 99.35%  
 Layer Normalization: 99.23%  
@@ -59,22 +60,23 @@ Group Normalization: 98.82%
 
 Mispredictions for model with Batch Normalization & L1 Regularization  
 
-<img width="395" alt="image" src="https://user-images.githubusercontent.com/13360207/215048794-e149a7bb-f281-4bfd-97ec-b78ffda44356.png">
+<img width="397" alt="image" src="https://user-images.githubusercontent.com/13360207/215257367-620216c2-0660-4c86-9ab8-b316c10756e8.png">
+
 
 Mispredictions for model with Layer Normalization  
 
-<img width="394" alt="image" src="https://user-images.githubusercontent.com/13360207/215048838-0564a770-ada8-4438-b86a-87786d138fd0.png">
+<img width="394" alt="image" src="https://user-images.githubusercontent.com/13360207/215257380-0423deef-32c8-4abd-96c7-23d2222ef478.png">
+
 
 Mispredictions for model with Group Normalization  
 
-<img width="393" alt="image" src="https://user-images.githubusercontent.com/13360207/215048865-2c324d4b-fb92-4a1b-8e57-86b41d9f9991.png">
+<img width="392" alt="image" src="https://user-images.githubusercontent.com/13360207/215257397-4bc6d99e-5748-47e8-8b63-0f7488c1b77c.png">
 
 ### Findings from Normalization Techniques  
-1. Batch normalization provides least test loss and highest test accuracy. This may be because the base model for fine tuned earlier for batch normalization
+1. Batch normalization provides least test loss and highest test accuracy followed by layer and group normalizations. This may be because the base model for fine tuned earlier for batch normalization
 2. Fluctuation is observed in the rate of decrease in loss/ rate of increase of accuracy for batch normalization
 3. Test loss reduces more consistenlty for Layer and Group normalization
-4. Outcomes: Batch Normalizaiton: Test Accuracy - 99.27%, Layer Normalization - 99.02%, Group Normalization - 99.25%
-5. Layer Normalization - Number of trainable parameters increased from 9590 to 90,158  
+4. Outcomes: Batch Normalization with L1 Regularization: 99.35%  Layer Normalization: 99.23%  Group Normalization: 99.10%  
 
 ### Method to perform three Normalization Techniques  
 Consider data set with batch size = 3, Number of Layers = 2, Channels per layer = 4, and input image size = 2x2. Sample data for this data set is as below. Refer Excel file "Regularization demonstration" in this assignment  
