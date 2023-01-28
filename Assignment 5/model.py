@@ -76,19 +76,19 @@ class Net(nn.Module):
         elif self.normalization_type == 'layer':
             self.conv1 = nn.Sequential(
                 nn.Conv2d(1, 8, 3, padding=1),                      #input: 1*28*28, output: 8*28*28, RF: 3*3
-                nn.LayerNorm([8, 28,28]),
+                nn.LayerNorm([8, 28,28], elementwise_affine = False),
                 nn.Dropout(0.05)
             )
             
             self.conv2 = nn.Sequential(
                 nn.Conv2d(8, 16, 3, padding=1),                     #input: 8*28*28, output: 16*28*28, RF: 5*5 
-                nn.LayerNorm([16, 28,28]),
+                nn.LayerNorm([16, 28,28], elementwise_affine = False),
                 nn.Dropout(0.05)
             )
 
             self.conv3 = nn.Sequential(
                 nn.Conv2d(16, 20, 3, padding=1),                     #input: 16*28*28, output: 20*28*28, RF: 7*7 
-                nn.LayerNorm([20, 28, 28]),
+                nn.LayerNorm([20, 28, 28], elementwise_affine = False),
                 nn.Dropout(0.05)
             )
 
@@ -100,13 +100,13 @@ class Net(nn.Module):
 
             self.conv5 = nn.Sequential(
                 nn.Conv2d(8, 8, 3, padding=1),                     #input: 8*14*14, output: 8*14*14, RF: 12*12 
-                nn.LayerNorm([8, 14, 14]),
+                nn.LayerNorm([8, 14, 14], elementwise_affine = False),
                 nn.Dropout(0.05)
             )
 
             self.conv6 = nn.Sequential(
                 nn.Conv2d(8, 16, 3, padding=1),                     #input: 8*14*14, output: 16*14*14, RF: 16*16 
-                nn.LayerNorm([16, 14, 14]),
+                nn.LayerNorm([16, 14, 14], elementwise_affine = False),
                 nn.Dropout(0.05)
             )
 
@@ -118,13 +118,13 @@ class Net(nn.Module):
 
             self.conv8 = nn.Sequential(
                 nn.Conv2d(8, 8, 3, padding = 1),                     #input: 8*7*7, output: 8*7*7, RF: 26*26 
-                nn.LayerNorm([8, 7, 7]),
+                nn.LayerNorm([8, 7, 7], elementwise_affine = False),
                 nn.Dropout(0.05)
             )
 
             self.conv9 = nn.Sequential(
                 nn.Conv2d(8, 16, 3, padding = 1),                    #input: 8*7*7, output: 16*7*7, RF: 34*34 
-                nn.LayerNorm([16, 7, 7]),
+                nn.LayerNorm([16, 7, 7], elementwise_affine = False),
                 nn.Dropout(0.05)
             )
 
