@@ -24,7 +24,8 @@ Model.py file has been created that does the following
 ### Assignment_5_v1.ipynb - Notebook runs remaining parts of the assignment  
 
 1. Load **model.py** and import **Net class**, generaty summary using torchsummary - summary is generated for all three normalizations
-![Training Parameters](https://user-images.githubusercontent.com/13360207/215048506-53ae5476-31ae-482f-8d32-374438150bfe.jpg)
+Batch Normalization: 9590 parameters, Layer Normalization: 9406 Parameters, Group Normalization: 9590 parameters
+<img width="906" alt="image" src="https://user-images.githubusercontent.com/13360207/215255351-2d5f6087-0f5f-47c8-abcc-113796b6ad24.png">
 
 
 2. Use dataloader to create training and test datasets, define batch size. batch size = 128 is used  
