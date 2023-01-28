@@ -40,17 +40,17 @@ Batch Normalization: 9590 parameters, Layer Normalization: 9406 Parameters, Grou
 6. Plot graphs for test loss and test accuracy:  
 <img width="507" alt="image" src="https://user-images.githubusercontent.com/13360207/215048718-b284c36c-a854-434e-9cbc-af3d03452c8b.png">
 Test Accuracy
-Batch Normalization with L1 Regularization: 99.35%
-Layer Normalization: 99.23%%
+Batch Normalization with L1 Regularization: 99.35%  
+Layer Normalization: 99.23%  
 Group Normalization: 99.10%
 
 7. Plot graphs for train loss and train accuracy:  
 
 <img width="521" alt="image" src="https://user-images.githubusercontent.com/13360207/215256711-c0196c9f-4632-42b1-8f47-f4dedcfbc903.png">
 Train Accuracy
-Batch Normalization with L1 Regularization: 99.19%
-Layer Normalization: 98.81%
-Group Normalization: 98.82%
+Batch Normalization with L1 Regularization: 99.19%  
+Layer Normalization: 98.81%  
+Group Normalization: 98.82%  
 
 9. Define function **ntest** that return data points for incorrect predictions
 	a. It accepts trained model, device and test_loader as inputs
