@@ -20,7 +20,7 @@ Model.py file has been created that does the following
 6. Batch Normalization and Dropout layer after each convolutional layer but for depthwise seperable layer
 7. GAP layer - AvgPool2d-30
 8. FC Layer - Linear-31
-9. N**Trainable parameters: 188,842**  
+9. **Trainable parameters: 188,842**  
 10. **Receptive Field: 63**  
 
 <img width="286" alt="image" src="https://user-images.githubusercontent.com/13360207/216124978-38b96ff5-44c6-4ef8-b88b-d731eba69922.png">
