@@ -30,9 +30,10 @@ Model.py file has been created that does the following
 <img width="398" alt="image" src="https://user-images.githubusercontent.com/13360207/216230688-fade815f-a1c0-45b2-aced-1269a3199b29.png">
 
 ### Training parameters  
-Learning Rate: 0.1, Scheduled Step 0.01 after 35th Epoch
-Number of Epochs: 45
-Epoch where >85% test accuracy achieved: 30
+Learning Rate: 0.1, Scheduled Step 0.01 after 35th Epoch  
+
+Number of Epochs: 45  
+Epoch where >85% test accuracy achieved: 30  
 Momentum = 0.9  
 Cross Entropy Loss, SGD Optimizer  
 **Training Accuracy: 79.08%**  
