@@ -1,33 +1,44 @@
-## Assignment 7 with ResNet18, CIFAR dataset and GradCAM plotting  
+## Assignment 8 with custom resnet, CIFAR dataset, Cyclical training with One Cycle Policy and GradCAM plotting  
 
 ### Objectives  
-Your assignment is to build the above training structure. Train ResNet18 on Cifar10 for 20 Epochs. The assignment must:
-pull your Github code to google colab (don't copy-paste code)
-prove that you are following the above structure
-that the code in your google collab notebook is NOTHING.. barely anything. There should not be any function or class that you can define in your Google Colab Notebook. Everything must be imported from all of your other files
-your colab file must:
-train resnet18 for 20 epochs on the CIFAR10 dataset
-show loss curves for test and train datasets
-show a gallery of 10 misclassified images
-show gradcam Links to an external site.
-output on 10 misclassified images.
-ResNet18 model is loaded from models
+Write a custom ResNet architecture for CIFAR10 that has the below architecture
+PrepLayer - Conv 3x3 s1, p1) >> BN >> RELU [64k]
+Layer1 - X = Conv 3x3 (s1, p1) >> MaxPool2D >> BN >> RELU [128k] --> R1 = ResBlock( (Conv-BN-ReLU-Conv-BN-ReLU))(X) [128k] 
+Add(X, R1)
+Layer 2 - Conv 3x3 [256k] --> MaxPooling2D --> BN --> ReLU
+Layer 3 - X = Conv 3x3 (s1, p1) >> MaxPool2D >> BN >> RELU [512k] --> R2 = ResBlock( (Conv-BN-ReLU-Conv-BN-ReLU))(X) [512k]
+Add(X, R2)
+MaxPooling with Kernel Size 4
+FC Layer 
+SoftMax
+Uses One Cycle Policy such that:
+Total Epochs = 24, Max at Epoch = 5, LRMIN = FIND, LRMAX = FIND, NO Annihilation
+Uses this transform -RandomCrop 32, 32 (after padding of 4) >> FlipLR >> Followed by CutOut(8, 8)
+Batch size = 512
+Target Accuracy: 90% (93.8% quadruple scores). 
+NO score if your code is not modular. Your collab must be importing your GitHub package, and then just running the model. I should be able to find the custom_resnet.py model in your GitHub repo that you'd be training. 
 
 ### Outcomes  
 
-1. ResNet18 is loaded from models  
+1. Custom ResNet is loaded from models  
 2. CIFAR train and test data loaders are loaded from utils  
-3. Sample images are viewed using imshow function from utils. RandomCrop, ShiftScaleRotate, CoarseDropout(16*16) transformations from Albumentations are applied only for train datasets  
+3. Sample images are viewed using imshow function from utils. RandomCrop, CoarseDropout(8*8) transformations from Albumentations are applied only for train datasets  
 
-<img width="398" alt="image" src="https://user-images.githubusercontent.com/13360207/218249129-4499fc6e-f3c5-44e6-90bc-ad6029c1933c.png">
+<img width="515" alt="image" src="https://user-images.githubusercontent.com/13360207/219948845-adee96c9-1a2f-493b-9f03-9d9fec193355.png">
 
-4. Model is trained for 20 Epochs. Training and test losses/ accuracies as below  
-  <img width="518" alt="image" src="https://user-images.githubusercontent.com/13360207/218249716-53afb15d-678d-4628-b05c-1b20bf5d447b.png">
+4. Find learning rate using one cycle policy --> Min Learning Rate - 0.001, Max Learning Rate = 0.01
 
+<img width="299" alt="image" src="https://user-images.githubusercontent.com/13360207/219948908-8686807d-770b-46d0-b7ea-f264b702e89e.png">
+
+5. Model is trained for 24 Epochs. Training and test losses/ accuracies as below  
+ <img width="728" alt="image" src="https://user-images.githubusercontent.com/13360207/219948946-ddf4c8d7-a23d-43ff-8cb0-182e1e27a618.png">
+ 
 5. Plot misclassified images  
-<img width="404" alt="image" src="https://user-images.githubusercontent.com/13360207/218249729-808a2b6c-ff3e-4a7f-b93c-a50bedf66aa4.png">
+<img width="526" alt="image" src="https://user-images.githubusercontent.com/13360207/219948966-528e2cb9-b4b2-435f-b3ee-6040567674fd.png">
+
 
 6. GradCAM plot for images  
-<img width="406" alt="image" src="https://user-images.githubusercontent.com/13360207/218249744-58ade7ba-cb01-4acd-b751-e14b9baf9086.png">
+<img width="541" alt="image" src="https://user-images.githubusercontent.com/13360207/219948978-5c5e5eda-81e6-4fa0-8a68-dfccc77e3b40.png">
+
 
 
