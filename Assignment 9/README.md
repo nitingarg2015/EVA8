@@ -23,20 +23,62 @@ Train the model for 24 epochs using the OCP that I wrote in class. Use ADAM as a
 ### Outcomes  
 
 1. Basic Attention model  is loaded from models  
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 16, 32, 32]             448
+       BatchNorm2d-2           [-1, 16, 32, 32]              32
+           Dropout-3           [-1, 16, 32, 32]               0
+            Conv2d-4           [-1, 32, 32, 32]           4,640
+       BatchNorm2d-5           [-1, 32, 32, 32]              64
+           Dropout-6           [-1, 32, 32, 32]               0
+            Conv2d-7           [-1, 48, 32, 32]          13,872
+       BatchNorm2d-8           [-1, 48, 32, 32]              96
+           Dropout-9           [-1, 48, 32, 32]               0
+        AvgPool2d-10             [-1, 48, 1, 1]               0
+          ConvNet-11                   [-1, 48]               0
+           Linear-12                    [-1, 8]             392
+           Linear-13                    [-1, 8]             392
+           Linear-14                    [-1, 8]             392
+           Linear-15                   [-1, 48]             432
+          Ultimus-16                   [-1, 48]               0
+           Linear-17                    [-1, 8]             392
+           Linear-18                    [-1, 8]             392
+           Linear-19                    [-1, 8]             392
+           Linear-20                   [-1, 48]             432
+          Ultimus-21                   [-1, 48]               0
+           Linear-22                    [-1, 8]             392
+           Linear-23                    [-1, 8]             392
+           Linear-24                    [-1, 8]             392
+           Linear-25                   [-1, 48]             432
+          Ultimus-26                   [-1, 48]               0
+           Linear-27                    [-1, 8]             392
+           Linear-28                    [-1, 8]             392
+           Linear-29                    [-1, 8]             392
+           Linear-30                   [-1, 48]             432
+          Ultimus-31                   [-1, 48]               0
+           Linear-32                   [-1, 10]             490
+================================================================
+Total params: 26,074
+Trainable params: 26,074
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.01
+Forward/backward pass size (MB): 2.25
+Params size (MB): 0.10
+Estimated Total Size (MB): 2.37
+----------------------------------------------------------------
 2. CIFAR train and test data loaders are loaded from utils  
 3. Sample images are viewed using imshow function from utils. RandomCrop, CoarseDropout(8*8) transformations from Albumentations are applied only for train datasets  
+<img width="527" alt="image" src="https://user-images.githubusercontent.com/13360207/220422080-2f92d447-378d-43b5-be4f-fec3ec5b6b67.png">
 
-<img width="515" alt="image" src="https://user-images.githubusercontent.com/13360207/219948845-adee96c9-1a2f-493b-9f03-9d9fec193355.png">
+4. One cycle policy --> Min Learning Rate - 0.001, Max Learning Rate = 0.01, Model is trained for 24 Epochs. Training and test losses/ accuracies as below  
+ <img width="710" alt="image" src="https://user-images.githubusercontent.com/13360207/220422186-58ed7eb3-e420-4bcb-9f9a-cd53377a13f6.png">
 
-4. One cycle policy --> Min Learning Rate - 0.001, Max Learning Rate = 0.01
-
-<img width="299" alt="image" src="https://user-images.githubusercontent.com/13360207/219948908-8686807d-770b-46d0-b7ea-f264b702e89e.png">
-
-5. Model is trained for 24 Epochs. Training and test losses/ accuracies as below  
- <img width="728" alt="image" src="https://user-images.githubusercontent.com/13360207/219948946-ddf4c8d7-a23d-43ff-8cb0-182e1e27a618.png">
  
 5. Plot misclassified images  
-<img width="526" alt="image" src="https://user-images.githubusercontent.com/13360207/219948966-528e2cb9-b4b2-435f-b3ee-6040567674fd.png">
+<img width="527" alt="image" src="https://user-images.githubusercontent.com/13360207/220422224-8e73bd72-c61f-4f10-8fac-8139ef08dda5.png">
+
 
 
 
