@@ -25,7 +25,7 @@ Train the model for 24 epochs using the OCP that I wrote in class. Use ADAM as a
 1. Basic Attention model  is loaded from models  
 ----------------------------------------------------------------
         Layer (type)               Output Shape         Param #
-================================================================
+        
             Conv2d-1           [-1, 16, 32, 32]             448
        BatchNorm2d-2           [-1, 16, 32, 32]              32
            Dropout-3           [-1, 16, 32, 32]               0
