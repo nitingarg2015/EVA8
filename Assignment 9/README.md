@@ -58,16 +58,16 @@ Train the model for 24 epochs using the OCP that I wrote in class. Use ADAM as a
            Linear-30                   [-1, 48]             432
           Ultimus-31                   [-1, 48]               0
            Linear-32                   [-1, 10]             490
-================================================================
 Total params: 26,074
 Trainable params: 26,074
-Non-trainable params: 0
-----------------------------------------------------------------
-Input size (MB): 0.01
-Forward/backward pass size (MB): 2.25
-Params size (MB): 0.10
-Estimated Total Size (MB): 2.37
-----------------------------------------------------------------
+Non-trainable params: 0  
+
+Input size (MB): 0.01  
+Forward/backward pass size (MB): 2.25  
+Params size (MB): 0.10  
+Estimated Total Size (MB): 2.37  
+
+
 2. CIFAR train and test data loaders are loaded from utils  
 3. Sample images are viewed using imshow function from utils. RandomCrop, CoarseDropout(8*8) transformations from Albumentations are applied only for train datasets  
 <img width="527" alt="image" src="https://user-images.githubusercontent.com/13360207/220422080-2f92d447-378d-43b5-be4f-fec3ec5b6b67.png">
