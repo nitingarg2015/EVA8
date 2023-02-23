@@ -25,16 +25,16 @@ Train the model for 24 epochs using the OCP that I wrote in class. Use ADAM as a
 1. Basic Attention model  is loaded from models  
 ----------------------------------------------------------------
         Layer (type)               Output Shape         Param #
-        
-            Conv2d-1           [-1, 16, 32, 32]             448
-       BatchNorm2d-2           [-1, 16, 32, 32]              32
-           Dropout-3           [-1, 16, 32, 32]               0
-            Conv2d-4           [-1, 32, 32, 32]           4,640
-       BatchNorm2d-5           [-1, 32, 32, 32]              64
-           Dropout-6           [-1, 32, 32, 32]               0
-            Conv2d-7           [-1, 48, 32, 32]          13,872
-       BatchNorm2d-8           [-1, 48, 32, 32]              96
-           Dropout-9           [-1, 48, 32, 32]               0
+================================================================
+            Conv2d-1           [-1, 16, 16, 16]             448
+       BatchNorm2d-2           [-1, 16, 16, 16]              32
+           Dropout-3           [-1, 16, 16, 16]               0
+            Conv2d-4             [-1, 32, 8, 8]           4,640
+       BatchNorm2d-5             [-1, 32, 8, 8]              64
+           Dropout-6             [-1, 32, 8, 8]               0
+            Conv2d-7             [-1, 48, 4, 4]          13,872
+       BatchNorm2d-8             [-1, 48, 4, 4]              96
+           Dropout-9             [-1, 48, 4, 4]               0
         AvgPool2d-10             [-1, 48, 1, 1]               0
           ConvNet-11                   [-1, 48]               0
            Linear-12                    [-1, 8]             392
@@ -58,14 +58,16 @@ Train the model for 24 epochs using the OCP that I wrote in class. Use ADAM as a
            Linear-30                   [-1, 48]             432
           Ultimus-31                   [-1, 48]               0
            Linear-32                   [-1, 10]             490
+================================================================
 Total params: 26,074
 Trainable params: 26,074
-Non-trainable params: 0  
-
-Input size (MB): 0.01  
-Forward/backward pass size (MB): 2.25  
-Params size (MB): 0.10  
-Estimated Total Size (MB): 2.37  
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.01
+Forward/backward pass size (MB): 0.16
+Params size (MB): 0.10
+Estimated Total Size (MB): 0.27
+---------------------------------------------------------------- 
 
 
 2. CIFAR train and test data loaders are loaded from utils  
@@ -73,11 +75,13 @@ Estimated Total Size (MB): 2.37
 <img width="527" alt="image" src="https://user-images.githubusercontent.com/13360207/220422080-2f92d447-378d-43b5-be4f-fec3ec5b6b67.png">
 
 4. One cycle policy --> Min Learning Rate - 0.001, Max Learning Rate = 0.01, Model is trained for 24 Epochs. Training and test losses/ accuracies as below  
- <img width="710" alt="image" src="https://user-images.githubusercontent.com/13360207/220422186-58ed7eb3-e420-4bcb-9f9a-cd53377a13f6.png">
+ <img width="699" alt="image" src="https://user-images.githubusercontent.com/13360207/220813815-83292393-038a-4067-b857-ca821bcfbbf4.png">
+
 
  
 5. Plot misclassified images  
-<img width="527" alt="image" src="https://user-images.githubusercontent.com/13360207/220422224-8e73bd72-c61f-4f10-8fac-8139ef08dda5.png">
+<img width="527" alt="image" src="https://user-images.githubusercontent.com/13360207/220813841-d9abda76-bbf5-498e-8f18-f6c9efac3f05.png">
+
 
 
 
