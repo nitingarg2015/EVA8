@@ -25,7 +25,6 @@ Train the model for 24 epochs using the OCP that I wrote in class. Use ADAM as a
 1. Basic Attention model  is loaded from models  
 ----------------------------------------------------------------
         Layer (type)               Output Shape         Param #
-================================================================
             Conv2d-1           [-1, 16, 16, 16]             448
        BatchNorm2d-2           [-1, 16, 16, 16]              32
            Dropout-3           [-1, 16, 16, 16]               0
@@ -58,17 +57,11 @@ Train the model for 24 epochs using the OCP that I wrote in class. Use ADAM as a
            Linear-30                   [-1, 48]             432
           Ultimus-31                   [-1, 48]               0
            Linear-32                   [-1, 10]             490
-================================================================
-Total params: 26,074
-Trainable params: 26,074
+Total params: 26,074  
+Trainable params: 26,074  
 Non-trainable params: 0
-----------------------------------------------------------------
-Input size (MB): 0.01
-Forward/backward pass size (MB): 0.16
-Params size (MB): 0.10
-Estimated Total Size (MB): 0.27
----------------------------------------------------------------- 
-
+Input size (MB): 0.01  
+Forward/backward pass size (MB): 0.16  
 
 2. CIFAR train and test data loaders are loaded from utils  
 3. Sample images are viewed using imshow function from utils. RandomCrop, CoarseDropout(8*8) transformations from Albumentations are applied only for train datasets  
