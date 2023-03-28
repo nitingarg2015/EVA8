@@ -8,6 +8,8 @@ Upload the link to GitHub implementation of this
 Upload the annotated image by YOLO.  
 
 ### Outcomes  
-position of bouding boxes yet to be ixed
+position of bouding boxes yet to be fixed...classes identified correctly  
+
+
 ![image](https://user-images.githubusercontent.com/13360207/228197743-01b4cca7-5d82-45ea-b01f-c7f44d95870f.png)
 
