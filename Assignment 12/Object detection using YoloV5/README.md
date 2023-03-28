@@ -26,7 +26,6 @@ classes: person, vest, red, blue, white, yellow (removed all other classes)
 
 ### Outcomes: Sample images with bounding boxes  
 <img width="245" alt="image" src="https://user-images.githubusercontent.com/13360207/228169278-d49270f9-4110-4794-8772-5ec498d4982e.png">
-<img width="241" alt="image" src="https://user-images.githubusercontent.com/13360207/228169325-a30d76ab-b74f-4ab2-800b-463bcf01bc0a.png">
 <img width="262" alt="image" src="https://user-images.githubusercontent.com/13360207/228169371-bfa45ce0-4293-4a0d-b61e-3ab29531781b.png">
 <img width="260" alt="image" src="https://user-images.githubusercontent.com/13360207/228169505-1a5f67e9-8669-4312-a09d-ef52c9f3c587.png">
 
